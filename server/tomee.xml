@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomee>
+    <Resource id="MySQL Database" type="DataSource">
+        JdbcDriver = com.mysql.jdbc.Driver
+        JdbcUrl = jdbc:mysql://database:3306/libreria_asw
+        UserName = root
+        Password = 1234
+        JtaManaged = true
+        DefaultAutoCommit = false
+    </Resource>
+    
+</tomee>

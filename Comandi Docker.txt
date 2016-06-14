@@ -1,0 +1,6 @@
+docker build -t database-img .
+docker run -d -p 3306:3306 --name database -e MYSQL_ROOT_PASSWORD="1234" -e MYSQL_DATABASE="libreria_asw" -d database-img
+
+
+docker build -t server-img .
+docker run -d -p 8081:8080 --name server --link database:database server-img
